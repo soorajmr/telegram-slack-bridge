@@ -15,7 +15,7 @@ export BRIDGE_PATH /home/ubuntu/tg2slack
 cd $BRIDGE_PATH
 
 # Download all the chat since we grabbed them last tg app keeps track of how much we read previously
-expect get_chat.expect 2>&1 > session.log
+expect ./telegram-slack-bridge/get_chat.expect 2>&1 > session.log
 ## Read messages from telegram-cli logs and post to Slack
 ## We remove the special characters
 cat session.log | ansi2txt | grep $PATTERN | sed -n "/$PATTERN/s/$PATTERN//p" > processed.txt
