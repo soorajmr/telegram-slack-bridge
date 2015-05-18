@@ -1,6 +1,6 @@
 # telegram-slack-bridge
 
-A quick and dirty Telegram to Slack bridge using off-the-shelf tools. We use vysheng's command line telegram client (https://github.com/vysheng/tg) and pzelnip's command line Slack tool (https://github.com/pzelnip/slackcmd).  
+This is a quick-and-dirty Telegram to Slack bridge using off-the-shelf tools. We use vysheng's command line telegram client (https://github.com/vysheng/tg) and pzelnip's command line Slack tool (https://github.com/pzelnip/slackcmd).  Read the readme's of these projects if you want to know how they work, but it is not necessary for our purpose.
 
 ## Instructions to use
 
