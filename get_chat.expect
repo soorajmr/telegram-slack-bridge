@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+## Telegram - Slack bridge
+##
+## Expect script to run command line telegram client
+##  to download unread messages
+## Copyright Sooraj Raveendran, 2015
+##
+
+spawn tg/bin/telegram-cli -k tg_server.pub -N -W
+expect "User"
+## CHANGEME: Replace MY_CHAT_GROUP with the name of the telegram group you are bridging.
+send "chat_with_peer MY_CHAT_GROUP\r"
+sleep 30
+send "/quit\r"
+send "quit\r"
+expect eof
+
